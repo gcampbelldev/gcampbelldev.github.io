@@ -80,7 +80,6 @@ h2 {
 
 .tile:hover {
     transform: scale(1.02);
-    transition: cubic-bezier(.07 1.41, .82, 1.41) 0.2s;
     background-color: #F7931E;
     color: black;
 }
@@ -117,9 +116,16 @@ h2 {
     width: 40px;
     height: 40px;
     margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .copyright-statement {
     font-size: 12px;
     font-style: italic;
+}
+
+.copyright-statement a {
+    color: #F7931E;
 }
