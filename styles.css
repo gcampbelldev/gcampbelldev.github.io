@@ -10,7 +10,7 @@ body {
 }
 
 .background-fade {
-    background-image: linear-gradient(#27392c,#333333, #000000);
+    background-image: linear-gradient(#333333, #000000);
     opacity: .95;
     width: 100vw;
     display: flex;
