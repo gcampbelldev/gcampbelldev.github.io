@@ -34,13 +34,20 @@ a {
 
 h1 {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #F7931E;
+}
+
+.descriptive-paragraph {
     font-size: 14px;
-    margin-bottom: 30px;
-    color: #666666;
+    color: lightgrey;
+    padding: 15px;
 }
 
 .share-button {
@@ -110,4 +117,9 @@ h2 {
     width: 40px;
     height: 40px;
     margin: 8px;
+}
+
+.copyright-statement {
+    font-size: 12px;
+    font-style: italic;
 }
