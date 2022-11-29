@@ -125,10 +125,11 @@ h2 {
 .image-container {
     height: 150px;
     width: 150px;
-    border-radius: 75px;
+    border-radius: 50%;
     border-style: solid;
     border-color: #F7931E;
     overflow: hidden;
+    box-shadow: 0 4px 4px black;
 }
 
 .image-container img {
