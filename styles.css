@@ -156,3 +156,70 @@ h2 {
 .copyright-statement a {
     color: #F7931E;
 }
+
+/* Fixed top menu bar */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Logo on the left */
+  .menu-bar .logo {
+    margin-left: 20px;
+    font-size: 1.5em;
+  }
+  
+  /* Menu items on the right */
+  .menu-bar .menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+  }
+  .menu-bar .menu-items li {
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
+  
+  /* "Hamburger" icon for mobile menu */
+  @media (max-width: 768px) {
+    .menu-bar .menu-items {
+      display: none;
+    }
+    .menu-bar .menu-icon {
+      display: block;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .menu-bar .menu-icon i {
+      font-size: 1.5em;
+    }
+  }
+  
+  /* Mobile menu dropdown */
+  .menu-bar .menu-dropdown {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    display: none;
+  }
+  .menu-bar .menu-dropdown li {
+    font-size: 0.9em;
+    margin: 20px;
+  }
+  
+  /* Show mobile menu when "hamburger" icon is clicked */
+  .menu-bar .menu-icon.active + .menu-dropdown {
+    display: block;
+  }
